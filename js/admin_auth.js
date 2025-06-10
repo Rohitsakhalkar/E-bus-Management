@@ -29,7 +29,7 @@ window.loginAdmin = async function () {
     }
 
     alert("Welcome Admin ✅");
-    window.location.href = "admin_dashboard.html";
+    window.location.href = "../admin/admin.html";
   } catch (error) {
     console.error("Login error:", error);
     alert("Login failed: " + error.message);

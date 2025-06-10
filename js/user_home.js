@@ -39,5 +39,5 @@ window.searchBuses = async function () {
 };
 
 window.viewLocation = function(driverId) {
-  window.open(`../track_driver.html?uid=${driverId}`, "_blank");
+  window.open(`../tracker.html?uid=${driverId}`, "_blank");
 };
