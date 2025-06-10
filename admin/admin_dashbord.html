@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - E-Bus</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    th { background: #f0f0f0; }
+    button { padding: 6px 10px; margin: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Welcome, Admin!</h2>
+  <h3>Registered Drivers</h3>
+
+  <table id="driverTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>UID</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <h3>All Buses</h3>
+<table id="busTable">
+  <thead>
+    <tr>
+      <th>Bus Number</th>
+      <th>Type</th>
+      <th>Route</th>
+      <th>Contact</th>
+      <th>Driver UID</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+
+  <script type="module" src="../js/admin_dashboard.js"></script>
+</body>
+</html>

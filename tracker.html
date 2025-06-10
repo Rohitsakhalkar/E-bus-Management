@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Track Driver - E-Bus</title>
+  <style>
+    #map {
+      height: 90vh;
+      width: 100%;
+    }
+    body {
+      font-family: sans-serif;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tracking Bus in Real Time</h2>
+  <div id="map"></div>
+
+  <!-- Load Google Maps with your API key -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYPsbM0CsNYrxh6qGmJERATcIJFOTDzlc"></script>
+
+  <!-- Firebase + Real-time tracking logic -->
+  <script type="module" src="js/tracker.js"></script>
+</body>
+</html>

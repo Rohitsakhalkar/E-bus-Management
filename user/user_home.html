@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Search Buses - E-Bus</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input, button { padding: 10px; margin: 6px 0; width: 100%; max-width: 400px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; }
+    th { background-color: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <h2>🔍 Search Buses</h2>
+  <input type="text" id="source" placeholder="Enter Source">
+  <input type="text" id="destination" placeholder="Enter Destination">
+  <button onclick="searchBuses()">Search</button>
+
+  <h3>📋 Matching Buses</h3>
+  <table id="busTable">
+    <thead>
+      <tr>
+        <th>Bus Number</th>
+        <th>Type</th>
+        <th>Route</th>
+        <th>Contact</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script type="module" src="../js/user_home.js"></script>
+</body>
+</html>

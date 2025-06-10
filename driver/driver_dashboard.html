@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Driver Dashboard</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input, select { padding: 8px; margin: 6px 0; display: block; width: 100%; }
+    button { padding: 10px 16px; cursor: pointer; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Welcome, Driver 👨‍✈️</h2>
+
+  <h3>📋 Post Your Bus Info</h3>
+  <input type="text" id="busNumber" placeholder="Bus Number">
+  <select id="busType">
+    <option value="">Select Bus Type</option>
+    <option value="AC">AC</option>
+    <option value="Non-AC">Non-AC</option>
+    <option value="Mini">Mini</option>
+    <option value="Volvo">Volvo</option>
+  </select>
+  <input type="text" id="source" placeholder="Source Location">
+  <input type="text" id="destination" placeholder="Destination Location">
+  <input type="text" id="contact" placeholder="Contact Number">
+  <button onclick="postBus()">Post Bus</button>
+
+  <h3>📍 Location: <span id="locationStatus">Waiting...</span></h3>
+
+  <script type="module" src="../js/driver_dashboard.js"></script>
+</body>
+</html>
