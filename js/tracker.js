@@ -15,10 +15,11 @@ window.initMap = () => {
     zoom: 15,
   });
 
-  marker = new google.maps.Marker({
-    map,
-    title: "Bus Location",
-  });
+  marker = new google.maps.marker.AdvancedMarkerElement({
+  map,
+  position: { lat, lng },
+  title: "Bus Location",
+});
 
   startTracking();
 };
