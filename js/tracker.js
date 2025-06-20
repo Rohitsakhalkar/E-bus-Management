@@ -34,14 +34,14 @@ function startTracking() {
       const lat = data.latitude;
       const lng = data.longitude;
  if (!marker) {
-        marker = new google.maps.marker.AdvancedMarkerElement({
-          map,
-          position: { lat, lng },
-          title: "Bus Location",
-        });
-      } else {
-        marker.position = { lat, lng }; // Update position property
-      }
+  marker = new google.maps.Marker({
+    map,
+    position: { lat, lng },
+    title: "Bus Location",
+  });
+} else {
+  marker.setPosition({ lat, lng });
+}
       map.setCenter({ lat, lng });
     } else {
       console.warn("No location data for driver:", driverUID);
