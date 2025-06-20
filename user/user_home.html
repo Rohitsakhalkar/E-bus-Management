@@ -3,21 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Search Buses - E-Bus</title>
-  <style>
-    body { font-family: sans-serif; padding: 20px; }
-    input, button { padding: 10px; margin: 6px 0; width: 100%; max-width: 400px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-    th, td { border: 1px solid #ccc; padding: 10px; }
-    th { background-color: #f0f0f0; }
-  </style>
+  <link rel="stylesheet" href="../design/user.css">
 </head>
 <body>
-  <h2>🔍 Search Buses</h2>
-  <input type="text" id="source" placeholder="Enter Source">
+  <button id="logoutBtn">logout</button>
+  <h2 id="SearchBus_heading">🔍 Search Buses</h2>
+  <input  type="text" id="source" placeholder="Enter Source">
   <input type="text" id="destination" placeholder="Enter Destination">
-  <button onclick="searchBuses()">Search</button>
+  <button id="searchBus_btn" onclick="searchBuses()">Search</button>
 
-  <h3>📋 Matching Buses</h3>
+  <h3 id="busTable_heading">📋 Matching Buses</h3>
   <table id="busTable">
     <thead>
       <tr>
@@ -30,7 +25,7 @@
     </thead>
     <tbody></tbody>
   </table>
-
+<script type="module" src="../js/user_auth.js"></script>
   <script type="module" src="../js/user_home.js"></script>
 </body>
 </html>

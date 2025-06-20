@@ -18,10 +18,14 @@
   <h2>Tracking Bus in Real Time</h2>
   <div id="map"></div>
 
-  <!-- Load Google Maps with your API key -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYPsbM0CsNYrxh6qGmJERATcIJFOTDzlc"></script>
+  <!-- Load Google Maps first -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+  ></script>
 
-  <!-- Firebase + Real-time tracking logic -->
+  <!-- Then load your tracker logic -->
   <script type="module" src="js/tracker.js"></script>
 </body>
 </html>

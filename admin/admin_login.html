@@ -2,13 +2,23 @@
 <html>
 <head>
   <title>Admin Login - E-Bus</title>
+  <link rel="stylesheet" href="../design/admin.css">
 </head>
 <body>
-  <h2>Admin Login</h2>
-  <input type="email" id="email" placeholder="Admin Email"><br>
-  <input type="password" id="password" placeholder="Password"><br>
-  <button onclick="loginAdmin()">Login</button>
-
+  <div id="container">
+    <div id="adminLogin_container">
+      <h2 id="adminLogin_heading">Admin Login</h2>
+      <div class="form_container">
+        <label id="lEmail" for="email">Email:</label>
+      <input type="email" id="email" placeholder="Admin Email" required>
+      </div>
+      <div class="form_container">
+        <label id="lPassword" for="password">Password:</label>
+      <input type="password" id="password" placeholder="Password" required>
+      </div>
+      <button id="login" onclick="loginAdmin()">Login</button>
+    </div>
+    </div>  
   <script type="module" src="../js/admin_auth.js"></script>
 </body>
 </html>

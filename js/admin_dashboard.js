@@ -58,7 +58,7 @@ async function loadBuses() {
 
 // Track Driver Button
 window.trackDriver = function(uid) {
-  window.location.href = `tracker.html?uid=${uid}`;
+ window.location.href = `../tracker.html?uid=${uid}`;
 };
 
 // Approve / Reject Bus

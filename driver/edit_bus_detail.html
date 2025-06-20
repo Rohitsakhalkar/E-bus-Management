@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Bus Details</title>
+  <link rel="stylesheet" href="../design/driver.css">
+</head>
+<body>
+ <script type="module" src="../js/edit_bus_detail.js"></script>
+  <form id="busForm">
+    <h2>Edit Bus Details</h2>
+    <input class="busEdit_form" type="text" id="busId" placeholder="Bus Document ID " required />
+    <input class="busEdit_form" type="text" id="busNumber" placeholder="Bus Number" required />
+    <input class="busEdit_form" type="text" id="busType" placeholder="Bus Type" required />
+    <input class="busEdit_form" type="text" id="source" placeholder="Source" required />
+    <input class="busEdit_form" type="text" id="destination" placeholder="Destination" required />
+    <input class="busEdit_form" type="text" id="contact" placeholder="Contact Number" required />
+    <button id="busInfoEdit_btn" type="submit">Update Bus</button>
+  </form>
+
+</body>
+</html>

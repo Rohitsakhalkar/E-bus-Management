@@ -1,38 +1,36 @@
+
 import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-database.js";
-import { app } from './firebase.js'; // Make sure firebase.js exports `app`
+import { app } from './firebase.js';
 
 const db = getDatabase(app);
-
-// Get driver UID from the URL like ?uid=123
 const urlParams = new URLSearchParams(window.location.search);
 const driverUID = urlParams.get('uid');
 
-let map;
-let marker;
+let map, marker;
 
-function initMap(lat, lng) {
-  const location = { lat, lng };
-
+window.initMap = () => {
+  
   map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 15.85, lng: 74.5 },
     zoom: 15,
-    center: location,
   });
 
   marker = new google.maps.Marker({
-    position: location,
-    map: map,
-    title: "Bus Location"
+    map,
+    title: "Bus Location",
   });
-}
 
-function updateMarker(lat, lng) {
-  const location = { lat, lng };
-  marker.setPosition(location);
-  map.setCenter(location);
-}
+  startTracking();
+};
 
-// Start reading real-time updates from Firebase
 function startTracking() {
+  if (!driverUID) {
+    alert("Driver UID not found in URL!");
+    return;
+  }
+
+  console.log("Tracking driver with UID:", driverUID);
+
   const locationRef = ref(db, `busLocations/${driverUID}`);
 
   onValue(locationRef, (snapshot) => {
@@ -41,15 +39,10 @@ function startTracking() {
       const lat = data.latitude;
       const lng = data.longitude;
 
-      if (!map) {
-        initMap(lat, lng);
-      } else {
-        updateMarker(lat, lng);
-      }
+      marker.setPosition({ lat, lng });
+      map.setCenter({ lat, lng });
     } else {
-      console.warn("No location data available for this driver.");
+      console.warn("No location data for driver:", driverUID);
     }
   });
 }
-
-startTracking();

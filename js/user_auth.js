@@ -1,4 +1,4 @@
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword ,signOut} from "https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js";
 import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js";
 import { app } from './firebase.js';
 
@@ -48,3 +48,16 @@ window.loginUser = async function () {
     alert("Login failed: " + err.message);
   }
 };
+const logoutBtn = document.getElementById('logoutBtn');
+if (logoutBtn) {
+  logoutBtn.addEventListener('click', async () => {
+    try {
+      await signOut(auth);
+      alert("Logged out successfully 👋");
+      window.location.href = '../index.html';
+    } catch (err) {
+      console.error("Logout error:", err);
+      alert("Oops, could not log you out");
+    }
+  });
+}

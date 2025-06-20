@@ -1,4 +1,4 @@
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword ,signOut } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js";
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js";
 import { app } from './firebase.js';
 
@@ -17,7 +17,7 @@ window.loginDriver = async function () {
     const userDoc = await getDoc(docRef);
 
     if (!userDoc.exists()) {
-      alert("User record not found in Firestore ❌");
+      alert("User record not found in Firestore ");
       return;
     }
 
@@ -28,10 +28,23 @@ window.loginDriver = async function () {
       return;
     }
 
-    alert("Login successful ✅");
-    window.location.href = "driver_dashboard.html";
+    alert("Login successful ");
+    window.location.href = "driver.html";
   } catch (error) {
     console.error(error);
     alert("Login failed: " + error.message);
   }
 };
+const logoutBtn = document.getElementById('logoutBtn');
+logoutBtn.addEventListener('click', async () => {
+  try {
+    await signOut(auth);
+    // optionally show a toast/alert:
+    alert("Logged out successfully 👋");
+   
+    window.location.href = '../index.html';
+  } catch (err) {
+    console.error("Logout error:", err);
+    alert("Oops, could not log you out");
+  }
+});

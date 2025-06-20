@@ -1,0 +1,153 @@
+ body { 
+     padding: 20px;
+       margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.775);
+    color:bisque;
+  
+ }
+ #container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ #driver_dashboard_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    background-color: rgba(35, 35, 35, 0.581);
+    border-radius: 20px;
+    box-shadow: 0 0 9px black;
+    width: 35.5rem;
+    height: 30.5rem;
+ }
+  .businfo_input { 
+    padding: 8px;
+     margin: 6px 0 6px 10px; 
+     display: block;
+     width: 80%;
+      border-radius: 6px;
+    height: 1.2rem;
+ }
+ #busType{
+    height: 2.3rem;
+ }
+button{ 
+    padding: 10px 16px;
+    cursor: pointer; 
+     background-color: rgba(12, 67, 43, 0.822);
+     color:antiquewhite;
+     font-weight: bold;
+      border-radius: 7px;
+ }
+ #driverDashboard_heading{
+    text-align: center;
+    font-size: 2.1rem;
+ }
+
+input::placeholder{
+    transition: ease 1s;
+}
+input:focus::placeholder{
+   transform: translatex(-70%) ;
+}  
+#businfo_container{
+    margin-left: 2rem;
+    display: block;
+    width: 80%;
+}
+#postBus_btn{
+    margin: 10px 0 0 0;
+}
+.driverLogin_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top:7.7rem ;
+    background-color: rgba(30, 29, 29, 0.388);
+    height: 20.5rem;
+    width:20rem;
+    border-radius: 20px;
+    box-shadow: 0 0 9px black;
+}
+#label_email{
+    margin: 0 20px 0 0;
+}
+#email,#password{
+    border-radius: 6px;
+    height: 1.2rem;
+}
+#driverLogin_btn{
+    width: 7.5rem;
+    height: 2rem;
+    margin: 7px;
+}
+#logoutBtn{
+    position:relative;
+    padding: 0;
+    left:90%;
+    border-radius: 5px;
+    height:23px;
+    width: 3.5rem;
+    background-color: rgb(68, 103, 33);
+    color: beige;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+#driverProfile_container{
+    text-align: center;
+    margin: 5.5rem ;
+}
+#driverprofile_heading{
+    font-size: 2.5rem;
+}
+#busForm{
+    padding: 1.5rem;
+    border-radius: 8px;
+  text-align: center;
+    margin: auto;
+    box-shadow: 0 0px 9px black;
+    background-color: rgba(33, 33, 33, 0.527);
+    width: 27.5rem;
+}
+.busEdit_form{
+     width: 80%; 
+     height: 1.5rem;
+     margin: 10px 0;
+     padding: 10px;
+     border-radius: 4px;
+     border: 1px solid #ccc;
+}
+#busInfoEdit_btn{
+    background: #007bff; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#busInfoEdit_btn:hover{
+     background: #0056b3;
+}
+.container {
+     max-width: 700px; 
+     margin: auto;
+}
+.bus-card {
+      background: #232222b2;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      border-left: 5px solid #007bff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.bus-card p {
+     margin: 5px 0;
+}
+#busDetails_heading{
+    text-align: center;
+    margin-bottom: 20px;
+}

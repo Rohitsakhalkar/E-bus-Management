@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.775);
+    color:bisque;
+  
+}
+.container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.login-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.111);
+    border-radius: 40px;
+    width: 50%;
+    height: 60vh;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.555);
+}
+.role-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+}
+button{
+    width: 6.2rem;
+    height: 1.6rem;
+    margin: 0 0 0 20px;
+    border-radius: 9px;
+    background-color: rgba(12, 67, 43, 0.822);
+    color:antiquewhite;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.555);
+}
+h2{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

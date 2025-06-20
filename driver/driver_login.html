@@ -2,13 +2,24 @@
 <html>
 <head>
   <title>Driver Login - E-Bus</title>
+  <link rel="styleSheet" href="../design/driver.css">
 </head>
 <body>
+  <div id="container">
+    <div class="driverLogin_container">
   <h2>Driver Login</h2>
-  <input type="email" id="email" placeholder="Email"><br>
-  <input type="password" id="password" placeholder="Password"><br>
-  <button onclick="loginDriver()">Login</button>
-
+  <div class="form_container">
+    <label id="label_email" for="email">Email:</label>
+  <input type="email" id="email" placeholder="Email">
+  </div>
+  <div class="form_container">
+    <label id="label_password" for="password">Password:</label>
+  <input type="password" id="password" placeholder="Password">
+  </div>
+  <button id="driverLogin_btn" onclick="loginDriver()">Login</button>
+  
+  </div>
+</div>
   <script type="module" src="../js/driver_auth.js"></script>
 </body>
 </html>

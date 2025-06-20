@@ -1,0 +1,111 @@
+ body { 
+   margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.775);
+    color:bisque;
+  
+}
+input{
+    border-radius: 6px;
+    height: 1.2rem;
+    
+}
+input::placeholder{
+    transition: ease 1s;
+}
+input:focus::placeholder{
+   transform: translatex(-70%) ;
+}  
+table { 
+    border-collapse: collapse;
+     width: 100%; 
+}
+    
+th, td { 
+    border: 1px solid #cccccc1b;
+     padding: 10px; 
+     text-align: left;
+     }
+ th 
+ { 
+    background: #cccccc1b; 
+}
+#logoutBtn{
+    position:relative;
+    left:90%;
+    border-radius: 5px;
+    height:23px;
+    width: 3.5rem;
+    background-color: rgb(68, 103, 33);
+    color: beige;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+#home_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6.7rem 0 0 0;
+    gap: 20px;
+}
+.child_homeContainer{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 30px;
+    width:100px ;
+    background-color: rgba(12, 67, 43, 0.822);
+    color: antiquewhite;
+    font-weight: bold;
+    border-radius: 6px;
+}
+#adminDashboard_heading{
+    font-size: 2.5rem;
+    text-align: center;
+}
+#container{
+    margin-top: 8.7rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#adminLogin_container{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(33, 31, 31, 0.455);
+    border-radius: 27px;
+    width: 22.5rem;
+    height: 18.5rem;
+    box-shadow: 0 0 9px black;
+}
+#lEmail{
+    margin: 0 20px 0 0;
+}
+#adminLogin_heading{
+    font-size: 1.7rem;
+}
+#register_container{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(33, 31, 31, 0.455);
+    border-radius: 27px;
+    width: 22.5rem;
+    height: 20.5rem;
+    box-shadow: 0 0 9px black;
+}
+#register_btn{
+    width: 7.5rem;
+}
+#label_name,#label_email{
+    margin: 0 20px 0 0;
+}
+

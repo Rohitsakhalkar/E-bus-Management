@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Admin Home</title>
+     <link rel="stylesheet" href="../design/admin.css">
 </head>
 <body>
-    <div>
-        <h1>Visit Dashboard</h1>
-        <button onclick="location.href='admin_dashbord.html'">Dashboard</button>
-        
-        <h1>Register Driver</h1>
-        <button onclick="location.href='Register.html'">Register</button>
+    <button id="logoutBtn">logout</button>
+    <div id="home_container">
+        <div class="child_homeContainer">
+            <h1>Visit Dashboard</h1>
+            <button onclick="location.href='admin_dashbord.html'">Dashboard</button>
+        </div>
+        <div class="child_homeContainer">
+            <h1>Register Driver</h1>
+            <button onclick="location.href='Register.html'">Register</button>
+        </div>
     </div>
+    <script type="module" src="../js/admin_auth.js"></script>
 </body>
 </html>

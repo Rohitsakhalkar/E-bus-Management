@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Bus Management</title>
+    <link rel="stylesheet" href="design/style.css">
 </head>
 <body>
-     <h1>🚌 Welcome to E-Bus Management System</h1>
+  <div class="container">
+     <h1 id="index_welcome"> Welcome to E-Bus Management System</h1>
 
   <div class="login-options">
     <!-- Admin Card -->
@@ -24,9 +26,12 @@
     <!-- User Card -->
     <div class="role-card">
       <h2>🙋 Passenger</h2>
-      <button onclick="location.href='user/user_login.html'">Login</button>
-      <button onclick="location.href='user/user_register.html'">Register</button>
+      <div id="Passenger">
+        <button onclick="location.href='user/user_login.html'">Login</button>
+        <button onclick="location.href='user/user_register.html'">Register</button>
+     </div>
     </div>
   </div>
+</div>
 </body>
 </html>
