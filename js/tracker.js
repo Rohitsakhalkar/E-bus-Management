@@ -15,12 +15,6 @@ window.initMap = () => {
     zoom: 15,
   });
 
-  marker = new google.maps.marker.AdvancedMarkerElement({
-  map,
-  position: { lat, lng },
-  title: "Bus Location",
-});
-
   startTracking();
 };
 
@@ -39,8 +33,15 @@ function startTracking() {
     if (data && data.latitude && data.longitude) {
       const lat = data.latitude;
       const lng = data.longitude;
-
-      marker.setPosition({ lat, lng });
+ if (!marker) {
+        marker = new google.maps.marker.AdvancedMarkerElement({
+          map,
+          position: { lat, lng },
+          title: "Bus Location",
+        });
+      } else {
+        marker.position = { lat, lng }; // Update position property
+      }
       map.setCenter({ lat, lng });
     } else {
       console.warn("No location data for driver:", driverUID);
