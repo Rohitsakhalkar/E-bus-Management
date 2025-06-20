@@ -12,6 +12,9 @@ function initMap() {
     center: { lat: 15.85, lng: 74.5 },
     zoom: 15,
   });
+  setTimeout(() => {
+  google.maps.event.trigger(map, "resize");
+}, 500);
 
   startTracking();
 }
@@ -22,10 +25,9 @@ function startTracking() {
     return;
   }
 
-  console.log("Tracking driver with UID:", driverUID);
 
   const locationRef = ref(db, `busLocations/${driverUID}`);
-
+    
   onValue(locationRef, (snapshot) => {
     const data = snapshot.val();
     if (data && data.latitude && data.longitude) {
