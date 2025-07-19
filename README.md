@@ -26,8 +26,8 @@ It allows users to view routes, check bus availability, and manage bookings in a
 -Admin dashboard for managing bus records
 -Ticket download as PDF
 
-##👨‍💻 Author
-###Hey there! I’m Rohit Sakhalkar, a frontend developer with a passion for real-world UI development and solving problems with clean code.
+## 👨‍💻 Author
+### Hey there! I’m Rohit Sakhalkar, a frontend developer with a passion for real-world UI development and solving problems with clean code.
 
 -🔗 GitHub: @Rohitsakhalkar
 
