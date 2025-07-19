@@ -31,6 +31,6 @@ It allows users to view routes, check bus availability, and manage bookings in a
 
 -🔗 GitHub: @Rohitsakhalkar
 
--📬 Email: rohitsakhalkar123@gmail.com
+-📬 Email: rohitsakhalkar3@gmail.com
 
 
