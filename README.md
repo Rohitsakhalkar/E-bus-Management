@@ -19,7 +19,7 @@ It allows users to view routes, check bus availability, and manage bookings in a
 
 ## 🌐 Live Demo
 
-🚧 Coming Soon! [https://e-bus-management.vercel.app/]
+Live Demo: [https://e-bus-management.vercel.app/]
 
 ## 🧩 Future Features
 -Firebase integration for real-time bookings
